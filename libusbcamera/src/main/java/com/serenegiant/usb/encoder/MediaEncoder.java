@@ -407,7 +407,7 @@ public abstract class MediaEncoder implements Runnable {
         	return;
         }
 		byte[] mPpsSps = new byte[0];
-		byte[] h264 = new byte[640 * 480];
+		byte[] h264 = new byte[480 * 640];
 
 		while (mIsCapturing) {
             encoderStatus = mMediaCodec.dequeueOutputBuffer(mBufferInfo, TIMEOUT_USEC);
